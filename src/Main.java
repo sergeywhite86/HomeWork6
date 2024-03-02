@@ -14,7 +14,6 @@ public class Main {
 
         System.out.println("Task3");
         for (int i = 0; i < 17; i += 2) {
-            if (i == 0) continue;
             System.out.print(i + " ");
         }
         System.out.println();
@@ -54,7 +53,7 @@ public class Main {
         double percent = 0.01;
         double contribution = 29000;
         for (int i = 1; i <= 12; i++) {
-            moneyInAccount = (moneyInAccount + contribution) + moneyInAccount * percent;
+            moneyInAccount = moneyInAccount + contribution + moneyInAccount * percent;
             System.out.printf("Месяц %d сумма накоплений равна %.2f рублей %n", i, moneyInAccount);
         }
 
